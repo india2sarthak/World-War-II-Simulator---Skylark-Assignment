@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:id="@+id/textData"
+    android:background="#000000"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:textColor="#ffffff"
+        android:id="@+id/narrativeText"
+        android:text="Hitler invades Poland. Britain and France declare war on Germany two days later."
+        />
+</RelativeLayout>
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_below="@+id/textData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="51.1657"
+        mapbox:mapbox_cameraTargetLng="10.4515"
+        mapbox:mapbox_styleUrl="mapbox://styles/india2sarthak/cjkngwzjj0iz12rphlnlem0al"
+        mapbox:mapbox_cameraZoom="3"
+        >
+    </com.mapbox.mapboxsdk.maps.MapView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler"
+        android:layout_alignParentBottom="true"
+        android:layout_height="70dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:id="@+id/relFirst"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/firstTextIntro"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="From the invasion of Poland to the dropping of the atom bombs on Hiroshima and Nagasaki - here's a simulator to the main events of World War Two."
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonFirst"
+            android:layout_alignStart="@+id/firstTextIntro"
+            android:layout_below="@+id/firstTextIntro"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:onClick="removeIntro"
+            android:text="Start" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/key1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <View
+                android:id="@+id/colorBlue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#9fb1bc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/aliesText"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="2dp"
+                android:text="Alies" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/key1">
+
+            <View
+                android:id="@+id/colorAxis"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="#a8bc9f" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/axisText"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="2dp"
+                android:text="Axis" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

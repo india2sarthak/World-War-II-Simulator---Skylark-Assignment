@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MapBoxWWII</string>
+    <string name="access_token">pk.eyJ1IjoiaW5kaWEyc2FydGhhayIsImEiOiJjamttbHZvY28xNTJ2M3ZwamU1cWUwbHdqIn0.jrg7MAac6nQzQNrzghL51g</string>
+</resources>
