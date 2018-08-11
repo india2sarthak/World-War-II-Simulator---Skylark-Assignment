@@ -11,17 +11,17 @@ Android based simulator depicting the various events that takes you through the 
 
 Libraries used :-  
 
-1.) MapBox (Android)
-2.) Google Volley (Android)
-3.) RecyclerView  (Android)
-4.) LAMP Stack( code : https://github.com/india2sarthak/WWII-BackEnd- )(Backend)
+1.) MapBox (Android)<br>
+2.) Google Volley (Android) <br>
+3.) RecyclerView  (Android) <br>
+4.) LAMP Stack( code : https://github.com/india2sarthak/WWII-BackEnd- )(Backend)<br>
 
 # Bibliography
 
-1.) https://www.the-map-as-history.com/Second-World-War-1939-1945
-2.) https://commons.wikimedia.org/wiki/Atlas_of_World_War_II
-3.) http://www.bbc.co.uk/history/worldwars/wwtwo/ww2_summary_01.shtml
-4.) http://www.andrewclem.com/War/WorldWarTwo.html
+1.) https://www.the-map-as-history.com/Second-World-War-1939-1945<br>
+2.) https://commons.wikimedia.org/wiki/Atlas_of_World_War_II<br>
+3.) http://www.bbc.co.uk/history/worldwars/wwtwo/ww2_summary_01.shtml<br>
+4.) http://www.andrewclem.com/War/WorldWarTwo.html<br>
 
 
 
